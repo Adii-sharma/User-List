@@ -1,0 +1,85 @@
+.userForm {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #c1dcce;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.inputGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.inputGroup label {
+    font-weight: 600;
+    color: #333;
+}
+
+.inputGroup input[type="text"],
+.inputGroup input[type="number"],
+.inputGroup select {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+    transition: border-color 0.3s;
+}
+
+.inputGroup input[type="text"]:focus,
+.inputGroup input[type="number"]:focus,
+.inputGroup select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.inputGroup input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    margin-top: 4px;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.cancelButton {
+    padding: 10px 20px;
+    background-color: #e0e0e0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submitButton {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.submitButton:hover {
+    background-color: #0056b3;
+    transform: translateY(-1px);
+}
+
+.cancelButton:hover {
+    background-color: #d0d0d0;
+}
+
+.inputGroup input::placeholder {
+    color: #aaa;
+    font-style: italic;
+}
